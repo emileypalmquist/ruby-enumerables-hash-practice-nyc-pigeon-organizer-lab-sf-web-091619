@@ -13,7 +13,7 @@ def nyc_pigeon_organizer(data)
         end
         
         if !new_hash[name][property].include?(attribute)
-          new_hash[name][property].push(attribute)
+          new_hash[name][property].push(attribute.to_s)
         end
       end
     end
